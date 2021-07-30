@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="commerce.amazoncommerce.ecommercestore">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ECommerceStore">
+
+        <activity
+            android:name="commerce.activites.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.ECommerceStore.NoActionBar">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
+        <activity android:name="commerce.activites.LoginActivity" />
+        <activity android:name="commerce.activites.RegistrationActivity" />
+        <activity android:name="commerce.activites.HomeActivity" />
+        <activity android:name="commerce.activites.DetailedActivity" />
+        <activity android:name="commerce.activites.ViewAllActivity" />
+        <activity android:name="commerce.activites.NavCategoryActivity" />
+        <activity android:name="commerce.activites.PlacedOrderActivity"/>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
